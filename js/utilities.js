@@ -8,8 +8,14 @@ function pinMatching(generatePin, userInput){
     const correctMsg = document.getElementById('correct-msg');
     const inCorrectMsg = document.getElementById('incorrect-msg');
     if(generatePinValue === userInputValue){
-        correctMsg.style.display = 'block';
-        inCorrectMsg.style.display = 'none';
+        if(userInputValue === ''){
+            correctMsg.style.display = 'none';
+            inCorrectMsg.style.display = 'none';
+        }
+        else{
+            correctMsg.style.display = 'block';
+            inCorrectMsg.style.display = 'none';
+        }
     }
     else{
         correctMsg.style.display = 'none';
