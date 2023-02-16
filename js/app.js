@@ -30,3 +30,7 @@ document.getElementById('calc-body').addEventListener('click', function(e){
         inputField.value = newInputNumber;
     }
 })
+// submit button events
+document.getElementById('btn-submit').addEventListener('click', function(){
+    pinMatching('display-pin', 'calc-display');
+})
